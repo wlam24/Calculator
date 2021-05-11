@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  background: linear-gradient(to right, rgb(147, 72, 123), rgb(125, 138, 186), rgb(86, 181, 79));
+}
+
+input {
+  width: 400px;
+  line-height: 75px;
+  font-size: 40px;
+  padding-left: 30px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.calc-container {
+  margin: 0 auto;
+  width: 400px;
+  background-color: gainsboro;
+  padding: 21px;
+}
+
+.calc-border {
+  background-color: rgba(0, 136, 255, 0.488);
+}
+
+.clear {
+  width: 436px;
+  line-height: 40px;
+  font-size: 23px;
+  background: rgb(226, 228, 78)
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 75% 25%
+}
+
+.number-calc {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr
+}
+
+.number-calc button {
+  width: 100px;
+  line-height: 20px;
+  font-size: 25px;
+  }
+
+.operators button {
+  width: 136px;
+  line-height: 45px;
+  font-size: 30px;
+}
