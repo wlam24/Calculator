@@ -91,8 +91,7 @@ const operatorButtons = (event) => {
     }
 
   } else {
-    console.log({ state, inputVal: input.value, previousVal, currentVal });
-    if (input.value) { // 8 
+    if (input.value) { 
       if(previousVal && currentVal) {
         if (state === "addition") {
           input.value = Number(previousVal) + Number(currentVal);
@@ -107,7 +106,6 @@ const operatorButtons = (event) => {
           input.value = Number(previousVal) / Number(currentVal) || 0; // truthy prioritizes over false (in other words, NaN || 0; 0 wins)
         }
       }
-      console.log({ state, inputVal: input.value, previousVal, currentVal });
       previousVal = null;
       currentVal = null;
       state = event.target.className;
@@ -115,7 +113,6 @@ const operatorButtons = (event) => {
   }
 };
 
-// Clear button
 const clearButton = () => {
   state = null;
   previousVal = null;
